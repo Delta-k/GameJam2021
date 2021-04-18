@@ -19,6 +19,8 @@ func _physics_process(delta): #Se ejecuta cada cuadro.
 	if Input.is_action_pressed("jump") and is_on_floor():
 		velocity.y = jumpForce
 	
+	if Input.is_action_pressed("exit"):
+		get_tree().change_scene("res://Niveles/MenúScene.tscn")
 	velocity = move_and_slide(velocity, Vector2.UP) #Movemos al personaje.
 	#Igualar velocity al movimiento impide que el objeto se siga acelerando por la "gravedad".
 	velocity.x = lerp(velocity.x,0,0.2)#Interpolams entre velocity.x y 0 en valores de 0.2 para desacelerar.

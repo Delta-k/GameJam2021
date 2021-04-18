@@ -1,7 +1,5 @@
 extends Node
 
-func _ready():
-	get_tree().reload_current_scene()
 
 func _on_btnRegresar_pressed():
 	get_tree().change_scene("res://Niveles/MenúScene.tscn")

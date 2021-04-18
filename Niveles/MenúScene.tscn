@@ -57,4 +57,5 @@ text = "Creditos"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+[connection signal="pressed" from="btnComenzar" to="." method="_on_btnComenzar_pressed"]
 [connection signal="pressed" from="btnCreditos" to="." method="_on_btnCreditos_pressed"]

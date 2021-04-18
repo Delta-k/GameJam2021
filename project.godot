@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="GameJam PBGJ"
-run/main_scene="res://.import/MenúScene.tscn"
+run/main_scene="res://Niveles/MenúScene.tscn"
 config/icon="res://icon.png"
 
 [input]
