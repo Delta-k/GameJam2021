@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Fonts/Mucho_Power.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://Scripts/SceneScript.gd" type="Script" id=2]
 [ext_resource path="res://Images/concept2_1.png" type="Texture" id=3]
+[ext_resource path="res://Audio/Menú.wav" type="AudioStream" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 1 )
@@ -57,5 +58,9 @@ text = "Creditos"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 4 )
+autoplay = true
 [connection signal="pressed" from="btnComenzar" to="." method="_on_btnComenzar_pressed"]
 [connection signal="pressed" from="btnCreditos" to="." method="_on_btnCreditos_pressed"]
