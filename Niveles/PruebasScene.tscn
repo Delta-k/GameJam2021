@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Images/concept2_1.png" type="Texture" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
-[ext_resource path="res://Objects/ObjJanequeo.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Objects/Janequeo/ObjJanequeo.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Objects/Luz mala/ObjLuzMala.tscn" type="PackedScene" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 723.098, 903.427 )
@@ -13,7 +14,8 @@ extents = Vector2( 31.9465, 32.1324 )
 [node name="Sala de pruebas" type="Node2D"]
 
 [node name="ObjMachi" type="RigidBody2D" parent="."]
-position = Vector2( 393.725, 154.34 )
+position = Vector2( 393.725, 153.396 )
+collision_layer = 2
 __meta__ = {
 "_edit_group_": true
 }
@@ -27,8 +29,10 @@ scale = Vector2( 0.1, 0.1 )
 shape = SubResource( 1 )
 
 [node name="ObjPiso" type="StaticBody2D" parent="."]
-position = Vector2( 470, 570 )
+position = Vector2( 472.832, 570 )
 scale = Vector2( 20, 1 )
+collision_layer = 2
+collision_mask = 3
 __meta__ = {
 "_edit_group_": true
 }
@@ -40,3 +44,7 @@ texture = ExtResource( 2 )
 shape = SubResource( 2 )
 
 [node name="ObjJanequeo" parent="." instance=ExtResource( 3 )]
+position = Vector2( 203.417, 438.618 )
+
+[node name="ObjLuzMala" parent="." instance=ExtResource( 4 )]
+position = Vector2( 804.868, 472.941 )

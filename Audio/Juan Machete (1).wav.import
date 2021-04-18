@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Juan Machete (1).wav-b84f4df340c9a83899704d55d06ac1c0.sample"
+
+[deps]
+
+source_file="res://Audio/Juan Machete (1).wav"
+dest_files=[ "res://.import/Juan Machete (1).wav-b84f4df340c9a83899704d55d06ac1c0.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
