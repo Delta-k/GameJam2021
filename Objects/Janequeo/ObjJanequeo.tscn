@@ -78,6 +78,9 @@ drag_margin_v_enabled = true
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 19 )
 volume_db = 10.0
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Espada" type="Area2D" parent="."]
 collision_layer = 8
