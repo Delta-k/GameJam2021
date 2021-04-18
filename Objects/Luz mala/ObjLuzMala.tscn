@@ -19,17 +19,21 @@ frame_3/texture = ExtResource( 2 )
 frame_3/delay_sec = 0.0
 
 [sub_resource type="CapsuleShape2D" id=2]
-radius = 24.2544
-height = 84.3643
+radius = 16.2449
+height = 59.5731
 
 [node name="ObjLuzMala" type="Area2D"]
 collision_layer = 4
 script = ExtResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = SubResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 20 )
 shape = SubResource( 2 )
 [connection signal="area_entered" from="." to="." method="_on_ObjLuzMala_area_entered"]
 [connection signal="body_entered" from="." to="." method="_on_ObjLuzMala_body_entered"]
